@@ -1,10 +1,10 @@
 from jinja2 import Template
 
 class Message:
-    _to = []
-    _is_html = False
 
     def __init__(self, to=None, subject=None, body=None):
+        self._to = []
+        self._is_html = False
         self._subject = subject
         if to:
             self._to = [to]

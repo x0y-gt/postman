@@ -5,9 +5,6 @@ from postman.message import Message
 __ALL__ = ['SmtpTransport']
 
 class SmtpTransport(Transport):
-    host = None
-
-    port = 25
 
     def __init__(self, user=None, password=None, host=None, port=587):
         self.user = user
