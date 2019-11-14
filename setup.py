@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-setup(name='Postman',
+setup(name='postman',
       version='0.1',
       description='A library to send emails using different providers',
       long_description=open('README.md').read(),
