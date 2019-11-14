@@ -1,6 +1,6 @@
 from jinja2 import Template
 
-class Message():
+class Message:
     _to = []
     _is_html = False
 

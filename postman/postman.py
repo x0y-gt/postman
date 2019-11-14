@@ -4,7 +4,7 @@ from postman.message import Message
 __ALL__ = ['Postman']
 
 
-class Postman():
+class Postman:
 
     def __init__(self, transport: Transport):
         self.transport = transport
