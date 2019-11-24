@@ -24,6 +24,6 @@ class SmtpTransport(Transport):
         self.smtp.send(
             to=",".join(msg._to),
             subject=msg._subject,
-            contents = [msg.render()]
+            contents = msg.render()
         )
 
