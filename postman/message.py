@@ -42,6 +42,7 @@ class Message:
         elif self._template:
             with open(self._template) as file:
                 template = Template(file.read())
-                return template.render(self._template_args)
+                render = template.render(self._template_args)
+                return render.replace("\n", " ")
         return None
 
